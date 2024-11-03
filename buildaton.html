@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="buildaton.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pngwing.com.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <video autoplay muted loop class="background-video">
+                <source src="Screen Recording 2024-11-04 012240.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>MONEY HEIST</h1>
+                <p>When the national mint and a touring school group are held hostage by robbers, police<br>believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store</p>
+                <button>Play</button>
+            </div>
+        </section>
+        
+        
+<section class="movie-section">
+    <h2>Popular on Netflix</h2>
+    <div id="popularCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="movie-row d-flex justify-content-center">
+                    <div class="movie-card mx-2">
+                        <img src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==" alt="Stranger Things">
+                        <h3>Stranger Things</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpg" alt="Naruto">
+                        <h3>Naruto</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzdhOGVjMTQtOTQ0Yi00ZWNjLTk2MjMtMWMzODczNWNiNmM3XkEyXkFqcGc@._V1_.jpg" alt="Never Have I Ever">
+                        <h3>Never Have I Ever</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://www.justwatch.com/images/poster/301402759/s718/season-1.jpg" alt="Elite">
+                        <h3>Elite</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#popularCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#popularCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+
+<section class="movie-section">
+    <h2>Continue Watching</h2>
+    <div id="continueCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="movie-row d-flex justify-content-center">
+                    <div class="movie-card mx-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/43/ArmyOfThievesTeaserPoster.jpg" alt="Army Of Thieves">
+                        <h3>Army Of Thieves</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BY2JlNTE1MDEtYmFjZi00Nzg0LWJkM2UtYmU2OTU5NDQ2ODZmXkEyXkFqcGc@._V1_.jpg" alt="Bandidos">
+                        <h3>Bandidos</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTk3MDA1ZjAtNTRhYS00YzNiLTgwOGEtYWRmYTQ3NjA0NTAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Naruto">
+                        <h3>Naruto</h3>
+                    </div>
+                    <div class="movie-card mx-2">
+                        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8182631_b_v8_aa.jpg" alt="The Vampire Diaries">
+                        <h3>The Vampire Diaries</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#continueCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#continueCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h1>Follow us</h1>
+            <div class="social d-flex flex-row justify-content-center">
+                <p class="para">Instagram</p>
+                <p class="para">Facebook</p>
+                <p class="para">LinkedIn</p>
+                <p class="para">X</p>
+            </div>
+            <p>© 2023 Netflix Clone. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
